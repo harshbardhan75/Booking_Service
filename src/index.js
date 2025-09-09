@@ -18,7 +18,7 @@ app.use('api',apiRoutes)
         console.log(`seerver has been started on port  ${PORT}`);
 
         if(process.env.DB_SYNC){
-            db.sequelize.sync({alter:true})
+            db.sequelize.sync()
         }
         
     })
